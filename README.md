@@ -1,2 +1,1 @@
-###Pos System
-created by hla
+### POS System from Sanny

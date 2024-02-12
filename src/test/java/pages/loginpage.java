@@ -14,13 +14,13 @@ public class loginpage {
     private final By pw = By.xpath("//input[@type='password']");
     private final By submitBtn = By.xpath("//button[@type='submit']");
 
-    public void enterUsername(){
+    public void enterUsername(String uname){
         driver.findElement(username).clear();
-       driver.findElement(username).sendKeys("admin");
+       driver.findElement(username).sendKeys(uname);
     }
-    public void enterPassword(){
+    public void enterPassword(String password){
         driver.findElement(pw).clear();
-        driver.findElement(pw).sendKeys("12345678");
+        driver.findElement(pw).sendKeys(password);
     }
     public void clickOnSubmitBtn(){
         driver.findElement(submitBtn).click();
